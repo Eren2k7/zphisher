@@ -212,7 +212,7 @@ banner() {
 		${ORANGE}|______|_|  \_\______|_| \_|
 ${RED}Version : ${__version__}
 
-		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by htr-tech (tahmid.rayat)${WHITE}
+		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by ERΣΠ︵²ᵏ⁷ (Eren2K7)${WHITE}
 	EOF
 }
 
