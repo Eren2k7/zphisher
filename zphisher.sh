@@ -201,33 +201,48 @@ check_status() {
 }
 
 ## Banner
-banner() {
-	cat <<- EOF
-		${ORANGE}
-		${ORANGE} ______ _____  ______ _   _ 
-		${ORANGE}|  ____|  __ \|  ____| \ | |
-		${ORANGE}| |__  | |__) | |__  |  \| |
-		${ORANGE}|  __| |  _  /|  __| | . ` |
-		${ORANGE}| |____| | \ \| |____| |\  |
-		${ORANGE}|______|_|  \_\______|_| \_|
-${RED}Version : ${__version__}
+# ================= COLORS =================
+RED='\033[1;31m'
+ORANGE='\033[1;33m'
+GREEN='\033[1;32m'
+CYAN='\033[1;36m'
+BLUE='\033[1;34m'
+WHITE='\033[0m'
+RESET='\033[0m'
 
-		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by ERΣΠ︵²ᵏ⁷ (Eren2K7)${WHITE}
-	EOF
+__version__="1.0"
+
+# ================= TYPE EFFECT =================
+type_line() {
+	printf "%b\n" "$1"
+	sleep 0.03
 }
 
-## Small Banner
+# ================= BIG BANNER =================
+banner() {
+	clear
+	type_line "${ORANGE} ______ _____  ______ _   _ "
+	type_line "${ORANGE}|  ____|  __ \\|  ____| \\ | |"
+	type_line "${ORANGE}| |__  | |__) | |__  |  \\| |"
+	type_line "${ORANGE}|  __| |  _  /|  __| | . \` |"
+	type_line "${ORANGE}| |____| | \\ \\| |____| |\\  |"
+	type_line "${ORANGE}|______|_|  \\_\\______|_| \\_|"
+
+	type_line "${RED}Version : ${__version__}"
+	echo
+	type_line "${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by ERΣΠ︵²ᵏ⁷ (Eren2K7)${RESET}"
+}
+
+# ================= SMALL BANNER =================
 banner_small() {
-	cat <<- EOF
-${BLUE}
-${BLUE} ███████╗██████╗ ███████╗███╗   ██╗
-${BLUE} ██╔════╝██╔══██╗██╔════╝████╗  ██║
-${BLUE} █████╗  ██████╔╝█████╗  ██╔██╗ ██║
-${BLUE} ██╔══╝  ██╔══██╗██╔══╝  ██║╚██╗██║
-${BLUE} ███████╗██║  ██║███████╗██║ ╚████║
-${BLUE} ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝
-${WHITE} ${__version__}
-	EOF
+	clear
+	type_line "${BLUE} ███████╗██████╗ ███████╗███╗   ██╗"
+	type_line "${BLUE} ██╔════╝██╔══██╗██╔════╝████╗  ██║"
+	type_line "${BLUE} █████╗  ██████╔╝█████╗  ██╔██╗ ██║"
+	type_line "${BLUE} ██╔══╝  ██╔══██╗██╔══╝  ██║╚██╗██║"
+	type_line "${BLUE} ███████╗██║  ██║███████╗██║ ╚████║"
+	type_line "${BLUE} ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝"
+	type_line "${WHITE} ${__version__}"
 }
 
 ## Dependencies
