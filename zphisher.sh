@@ -212,12 +212,6 @@ RESET='\033[0m'
 
 __version__="1.0"
 
-# ================= TYPE EFFECT =================
-type_line() {
-	printf "%b\n" "$1"
-	sleep 0.03
-}
-
 # ================= BIG BANNER =================
 banner() {
 	clear
