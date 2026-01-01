@@ -222,11 +222,11 @@ type_line() {
 banner() {
 	clear
 	type_line "${ORANGE} ______ _____  ______ _   _ "
-	type_line "${ORANGE}|  ____|  __ \\|  ____| \\ | |"
-	type_line "${ORANGE}| |__  | |__) | |__  |  \\| |"
-	type_line "${ORANGE}|  __| |  _  /|  __| | . \` |"
-	type_line "${ORANGE}| |____| | \\ \\| |____| |\\  |"
-	type_line "${ORANGE}|______|_|  \\_\\______|_| \\_|"
+	type_line "${ORANGE}|  ____|  __ \\\\|  ____| \\\\ | |"
+	type_line "${ORANGE}| |__  | |__) | |__  |  \\\\| |"
+	type_line "${ORANGE}|  __| |  _  /|  __| | . \\\\` |"
+	type_line "${ORANGE}| |____| | \\\\ \\\\| |____| |\\\\  |"
+	type_line "${ORANGE}|______|_|  \\\\_\\\\______|_| \\\\_|"
 
 	type_line "${RED}Version : ${__version__}"
 	echo
@@ -242,7 +242,7 @@ banner_small() {
 	type_line "${BLUE} ██╔══╝  ██╔══██╗██╔══╝  ██║╚██╗██║"
 	type_line "${BLUE} ███████╗██║  ██║███████╗██║ ╚████║"
 	type_line "${BLUE} ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝"
-	type_line "${WHITE} ${__version__}"
+	type_line "${WHITE}${__version__}"
 }
 
 ## Dependencies
