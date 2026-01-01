@@ -76,7 +76,7 @@
 ##    The precise terms and conditions for copying, distribution and
 ##    modification follow.
 ##
-##      Copyright (C) 2022  HTR-TECH (https://github.com/htr-tech)
+##      Copyright (C) 2025  EREN-TECH (https://github.com/Eren2K7)
 ##
 
 ##   THANKS TO :
@@ -204,25 +204,27 @@ check_status() {
 banner() {
 	cat <<- EOF
 		${ORANGE}
-		${ORANGE} ______      _____  _____  _   _ 
-		${ORANGE}|  ____|    |  __ \|  ____| \ | |
-		${ORANGE}| |__  _ __ | |__) | |__  |  \| |
-		${ORANGE}|  __|| '__||  _  /|  __| | . \` |
-		${ORANGE}| |___| |   | | \ \| |____| |\  |
-		${ORANGE}|______|_|   |_|  \_\______|_| \_|
-		${ORANGE}                 ${RED}Version : ${__version__}
+		${ORANGE}  ______ _____  ______ _   _ 
+		${ORANGE} |  ____|  __ \|  ____| \ | |
+		${ORANGE} | |__  | |__) | |__  |  \| |
+		${ORANGE} |  __| |  _  /|  __| |   \ |
+		${ORANGE} | |____| | \ \| |____| |\  |
+		${ORANGE} |______|_|  \_\______|_| \_|
+		${ORANGE}                  ${RED}Version : ${__version__}
 
 		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by ERΣΠ︵²ᵏ⁷ (Eren2K7)${WHITE}
 	EOF
 }
 
-## Small Banner
 banner_small() {
 	cat <<- EOF
 		${BLUE}
-		${BLUE}  ░▀▀▀░█▀▄░█▀▀░█▄░█
-		${BLUE}  ░▀▀█░█▀▄░█▀▀░█░▀█
-		${BLUE}  ░▀▀▀░▀░▀░▀▀▀░▀░░▀${WHITE} ${__version__}
+		${BLUE}  ░███████╗██████╗ ███████╗███╗   ██╗
+		${BLUE}  ░██╔════╝██╔══██╗██╔════╝████╗  ██║
+		${BLUE}  ░█████╗  ██████╔╝█████╗  ██╔██╗ ██║
+		${BLUE}  ░██╔══╝  ██╔══██╗██╔══╝  ██║╚██╗██║
+		${BLUE}  ░███████╗██║  ██║███████╗██║ ╚████║
+		${BLUE}  ░╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝${WHITE} ${__version__}
 	EOF
 }
 
