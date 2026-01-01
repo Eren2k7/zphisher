@@ -213,32 +213,41 @@ RESET='\033[0m'
 __version__="1.0"
 
 # ================= BIG BANNER =================
-banner() {
-	clear
-	type_line "${ORANGE} ______ _____  ______ _   _ "
-	type_line "${ORANGE}|  ____|  __ \\\\|  ____| \\\\ | |"
-	type_line "${ORANGE}| |__  | |__) | |__  |  \\\\| |"
-	type_line "${ORANGE}|  __| |  _  /|  __| | . \\\\` |"
-	type_line "${ORANGE}| |____| | \\\\ \\\\| |____| |\\\\  |"
-	type_line "${ORANGE}|______|_|  \\\\_\\\\______|_| \\\\_|"
 
-	type_line "${RED}Version : ${__version__}"
-	echo
-	type_line "${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by ERΣΠ︵²ᵏ⁷ (Eren2K7)${RESET}"
+# ================= COLORS =================
+RED='\033[1;31m'
+ORANGE='\033[1;33m'
+GREEN='\033[1;32m'
+CYAN='\033[1;36m'
+BLUE='\033[1;34m'
+WHITE='\033[0m'
+
+__version__="1.0"
+
+# ================= BIG BANNER =================
+banner() {
+	printf "${ORANGE}\n"
+	printf "${ORANGE} ______ _____  ______ _   _ \n"
+	printf "${ORANGE}|  ____|  __ \\|  ____| \\ | |\n"
+	printf "${ORANGE}| |__  | |__) | |__  |  \\| |\n"
+	printf "${ORANGE}|  __| |  _  /|  __| | . \` |\n"
+	printf "${ORANGE}| |____| | \\ \\| |____| |\\  |\n"
+	printf "${ORANGE}|______|_|  \\_\\______|_| \\_|\n"
+	printf "${RED}Version : ${__version__}\n\n"
+	printf "${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by ERΣΠ︵²ᵏ⁷ (Eren2K7)${WHITE}\n"
 }
 
 # ================= SMALL BANNER =================
 banner_small() {
-	clear
-	type_line "${BLUE} ███████╗██████╗ ███████╗███╗   ██╗"
-	type_line "${BLUE} ██╔════╝██╔══██╗██╔════╝████╗  ██║"
-	type_line "${BLUE} █████╗  ██████╔╝█████╗  ██╔██╗ ██║"
-	type_line "${BLUE} ██╔══╝  ██╔══██╗██╔══╝  ██║╚██╗██║"
-	type_line "${BLUE} ███████╗██║  ██║███████╗██║ ╚████║"
-	type_line "${BLUE} ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝"
-	type_line "${WHITE}${__version__}"
+	printf "${BLUE}\n"
+	printf "${BLUE} ███████╗██████╗ ███████╗███╗   ██╗\n"
+	printf "${BLUE} ██╔════╝██╔══██╗██╔════╝████╗  ██║\n"
+	printf "${BLUE} █████╗  ██████╔╝█████╗  ██╔██╗ ██║\n"
+	printf "${BLUE} ██╔══╝  ██╔══██╗██╔══╝  ██║╚██╗██║\n"
+	printf "${BLUE} ███████╗██║  ██║███████╗██║ ╚████║\n"
+	printf "${BLUE} ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝\n"
+	printf "${WHITE} ${__version__}\n"
 }
-
 ## Dependencies
 dependencies() {
 	echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing required packages..."
