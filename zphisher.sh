@@ -201,53 +201,31 @@ check_status() {
 }
 
 ## Banner
-# ================= COLORS =================
-RED='\033[1;31m'
-ORANGE='\033[1;33m'
-GREEN='\033[1;32m'
-CYAN='\033[1;36m'
-BLUE='\033[1;34m'
-WHITE='\033[0m'
-RESET='\033[0m'
-
-__version__="1.0"
-
-# ================= BIG BANNER =================
-
-# ================= COLORS =================
-RED='\033[1;31m'
-ORANGE='\033[1;33m'
-GREEN='\033[1;32m'
-CYAN='\033[1;36m'
-BLUE='\033[1;34m'
-WHITE='\033[0m'
-
-__version__="1.0"
-
-# ================= BIG BANNER =================
 banner() {
-	printf "${ORANGE}\n"
-	printf "${ORANGE} ______ _____  ______ _   _ \n"
-	printf "${ORANGE}|  ____|  __ \\|  ____| \\ | |\n"
-	printf "${ORANGE}| |__  | |__) | |__  |  \\| |\n"
-	printf "${ORANGE}|  __| |  _  /|  __| | . \` |\n"
-	printf "${ORANGE}| |____| | \\ \\| |____| |\\  |\n"
-	printf "${ORANGE}|______|_|  \\_\\______|_| \\_|\n"
-	printf "${RED}Version : ${__version__}\n\n"
-	printf "${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by ERΣΠ︵²ᵏ⁷ (Eren2K7)${WHITE}\n"
+	cat <<- EOF
+		${ORANGE}
+		${ORANGE} ______      _____  _____  _   _ 
+		${ORANGE}|  ____|    |  __ \|  ____| \ | |
+		${ORANGE}| |__  _ __ | |__) | |__  |  \| |
+		${ORANGE}|  __|| '__||  _  /|  __| | . \` |
+		${ORANGE}| |___| |   | | \ \| |____| |\  |
+		${ORANGE}|______|_|   |_|  \_\______|_| \_|
+		${ORANGE}                 ${RED}Version : ${__version__}
+
+		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by ERΣΠ︵²ᵏ⁷ (Eren2K7)${WHITE}
+	EOF
 }
 
-# ================= SMALL BANNER =================
+## Small Banner
 banner_small() {
-	printf "${BLUE}\n"
-	printf "${BLUE} ███████╗██████╗ ███████╗███╗   ██╗\n"
-	printf "${BLUE} ██╔════╝██╔══██╗██╔════╝████╗  ██║\n"
-	printf "${BLUE} █████╗  ██████╔╝█████╗  ██╔██╗ ██║\n"
-	printf "${BLUE} ██╔══╝  ██╔══██╗██╔══╝  ██║╚██╗██║\n"
-	printf "${BLUE} ███████╗██║  ██║███████╗██║ ╚████║\n"
-	printf "${BLUE} ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝\n"
-	printf "${WHITE} ${__version__}\n"
+	cat <<- EOF
+		${BLUE}
+		${BLUE}  ░▀▀▀░█▀▄░█▀▀░█▄░█
+		${BLUE}  ░▀▀█░█▀▄░█▀▀░█░▀█
+		${BLUE}  ░▀▀▀░▀░▀░▀▀▀░▀░░▀${WHITE} ${__version__}
+	EOF
 }
+
 ## Dependencies
 dependencies() {
 	echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing required packages..."
